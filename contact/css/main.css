@@ -1,16 +1,8 @@
 /****BASE STYLES****/
 body{
-  font-family: 'Indie Flower', cursive;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 48px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
   background-color: #f0ebcf;
-  text-align: center;
-}
-.full-width{
-    width: 1200px;
-    margin: 0 auto;
-    margin-top:5px;
 }
 /****GRID STYLES****/
 nav {
@@ -33,24 +25,61 @@ nav ul li a{
   color:#ff4b57;
   list-style-type: none;
 }
-h2{
-  font-size: 32px;
-  padding-top:0px;
+.container {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
 }
-content .half-width{
-  width:600px;
-  float:left;
-  padding-bottom:8px;
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
-#bee{
-  height:365px;
-  width: 405px;
-  padding-left:2px;
+main {
+  text-align: center;
 }
-#pic{
-  height:400px;
-  width:350px;
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  color:white;
 }
+p {
+  color:white;
+  font-weight: bold;
+  font-size: 22px;
+}
+h2 {
+  color:#ff4b57;
+  font-weight: bold;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #aea89e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #ff4b57;
+}
+
 footer{
   text-align: center;
   word-spacing: 50px;
